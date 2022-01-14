@@ -1,5 +1,4 @@
 import React, { useState,useContext } from 'react';
-
 import Logo from '../../olx-logo.png';
 import { FirebaseContext } from '../../store/FirebaseContext';
 import {useHistory} from 'react-router-dom'
@@ -22,7 +21,7 @@ export default function Signup() {
            username:username,
            phone:phone
          }).then(()=>{
-            history.push("./login")
+            history.push("/")
          })
        })
     })
